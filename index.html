@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <form action="#" class="form" autocomplete="off">
+        <div class="load">Please Wait ...</div>
+        <div>
+          <label for="name" class="form-label">Player Name</label>
+          <input type="text" id="name" name="name" class="form-control" />
+          <button type="submit">Continue</button>
+        </div>
+        <p class="invalid">Please enter your name</p>
+        <!-- <div class="id"></div> -->
+      </form>
+
+      <div class="banner">
+        <div class="welcome">
+          Hi <span class="player"></span> welcome to the Rock, Paper, Scissors
+          game. To procced with the game, click on the play button. You can
+          click on the help button to learn how to play the game
+          <div class="btn">
+            <button type="button" id="play">Play</button>
+            <button type="button">Help</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- <div class="warn">You have one more move to go</div>
+      <div class="play-warn">Better luck this time round</div> -->
+      <div class="stats">
+        <div class="scores">
+          <div class="items">
+            <div>
+              <label for="win"><span class="player-win"></span>:</label>
+              <input
+                type="text"
+                name=""
+                id="win"
+                class="reset"
+                value="0"
+                disabled
+              />
+            </div>
+            <div>
+              <label for="tie">Tie:</label>
+              <input
+                type="text"
+                name=""
+                id="tie"
+                class="reset"
+                value="0"
+                disabled
+              />
+            </div>
+            <div>
+              <label for="lose">Computer:</label>
+              <input
+                type="text"
+                name=""
+                id="lose"
+                class="reset"
+                value="0"
+                disabled
+              />
+            </div>
+          </div>
+        </div>
+        <div class="life">Lives remaining:<span class="lives">20</span></div>
+      </div>
+
+      <div class="game">
+        <div class="output">
+          <div class="top">
+            <div class="left"><span class="player"></span>'s Move</div>
+            <div class="right">Computer Move</div>
+          </div>
+          <div class="screen">
+            <div class="player-screen"></div>
+            <div class="computer-screen"></div>
+          </div>
+        </div>
+        <div class="rps-card-deck">
+          <div class="rps-deck">
+            <img src="img/Rock.png" class="rock" alt="" />
+          </div>
+          <div class="rps-deck">
+            <img src="img/Paper.png" class="paper" alt="" />
+          </div>
+          <div class="rps-deck">
+            <img src="img/Scissors.png" class="scissors" alt="" />
+          </div>
+        </div>
+
+        <!-- <div class="state">You win</div> -->
+      </div>
+      <div class="over">
+        <h1 class="game-over">💔<br />GAME OVER</h1>
+        <div class="result">
+          <div class="wins">
+            <span class="player-win-over"></span>'s Wins:<span
+              class="win-score"
+            ></span>
+          </div>
+          <div class="loses">
+            Computer Wins:<span class="lose-score"></span>
+          </div>
+          <div class="ties">Ties:<span class="tie-score"></span></div>
+        </div>
+        <div class="control-btn">
+          <button type="button" class="play-again">Play Again</button>
+          <button type="button">Quit</button>
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
